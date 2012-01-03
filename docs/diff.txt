@@ -1,0 +1,15 @@
+diff between v7 e v8
+
+> ./ubc/midp/mobilephoto/core/ui/controller/PlayVideoController.java
+20a22
+> ./ubc/midp/mobilephoto/core/ui/controller/VideoCaptureController.java
+28a31,32
+> ./ubc/midp/mobilephoto/core/ui/datamodel/VideoAlbumData.java
+> ./ubc/midp/mobilephoto/core/ui/datamodel/VideoMediaAccessor.java
+31a36
+> ./ubc/midp/mobilephoto/core/ui/screens/CaptureVideoScreen.java
+35a41
+> ./ubc/midp/mobilephoto/core/ui/screens/PlayVideoScreen.java
+37d42
+< ./ubc/midp/mobilephoto/core/ui/screens/SplashScreen.java
+

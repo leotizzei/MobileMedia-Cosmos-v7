@@ -1,0 +1,55 @@
+MM-Cosmos-OO-v6
+
+AlbumController
+- Reset
+- New Photo Album
+- Delete Album
+- Yes - Delete
+- No - Delete
+- Save new label
+
+MediaController
+- View /*photo album*/
+- Play /*Music*/
+- Add
+- Save item
+- Delete
+- Edit label
+- Sort by views
+- Set favorite
+- View favorites
+- Save new label
+- Back
+- Cancel
+
+MediaListController
+- Select
+- Back
+
+MusicPlayController
+- Start
+- Stop
+- Copy /*copy photo*/
+- Back
+- Cancel
+
+PhotoViewController
+- Copy /*copy photo*/
+- Back
+- Cancel
+
+
+SmsReceiverController
+- Accept Photo
+- Reject Photo
+- OK
+
+SmsSenderController
+- Send Photo by SMS
+- Send now
+- Cancel
+
+
+
+
+

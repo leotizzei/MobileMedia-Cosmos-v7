@@ -1,0 +1,31 @@
+// #ifdef includeVideo
+// [NC] Added in the scenario 08
+package br.unicamp.ic.sed.mobilemedia.filesystemmgr.impl;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+
+import main.IMediaData;
+import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.MediaNotFoundException;
+import br.unicamp.ic.sed.mobilemedia.filesystemmgr.spec.excep.PersistenceMechanismException;
+
+class VideoAlbumData extends AlbumData{
+	
+	public VideoAlbumData() {
+		mediaAccessor = new VideoMediaAccessor();
+	}
+	
+	protected InputStream getVideoFromRecordStore(String recordStore, String videoName) throws PersistenceMechanismException, MediaNotFoundException {
+		System.out.println("[VideoAlbumData:getVideoFromRecordStore("+recordStore+","+videoName+")");
+		IMediaData mediaInfo = null;
+		mediaInfo = mediaAccessor.getMediaInfo(videoName);
+		//Find the record ID and store name of the image to retrieve
+		int mediaId = mediaInfo.getForeignRecordId();
+		String album = mediaInfo.getParentAlbumName();
+		//Now, load the image (on demand) from RMS and cache it in the hashtable
+		byte[] videoData = mediaAccessor.loadMediaBytesFromRMS(album, mediaId);
+		return new ByteArrayInputStream(videoData);
+
+	}
+}
+//#endif

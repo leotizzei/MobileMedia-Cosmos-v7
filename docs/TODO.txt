@@ -1,0 +1,6 @@
+TODO list
+
+Implement Features:
+- capture photo
+- capture video
+- copy media

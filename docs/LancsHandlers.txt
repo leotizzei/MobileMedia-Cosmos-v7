@@ -1,0 +1,63 @@
+Handlers -MM-OO-V8(7) LANCS
+
+
+AlbumController
+- Reset
+- Delete Album
+- Yes - Delete
+- No - Delete
+- Save
+
+BaseController
+- Exit
+- Back
+- Cancel
+
+MediaController
+- View
+- Play
+- Play Video
+- Capture Video
+- Capture Photo
+- Save Item
+- Delete
+- Edit Label
+- Sort by Views
+- Set Favorite
+- View Favorites
+- Save
+- Back
+- Cancel
+
+MusicPlayController
+- Start
+- Stop
+- Copy /* copy photo or media?*/
+- Save Item
+- Back
+- Cancel
+
+PhotoViewController
+- Copy /* copy photo */
+- Save Item
+- Take photo
+- Cancel
+- Back
+
+PlayVideoController
+- Start
+- Stop
+- Back
+- Cancel
+- Copy /* copy photo or media?*/
+- Save Item
+
+SelectMediaController
+- Select
+
+VideoCaptureController
+- Start
+- Stop
+- Back
+- Cancel
+- Save Item
