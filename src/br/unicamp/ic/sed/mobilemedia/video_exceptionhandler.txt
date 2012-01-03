@@ -1,3 +1,0 @@
-//#ifdef includePhotoAlbum
-//#ifdef includePhotoAlbum
-//#ifdef includePhotoAlbum
